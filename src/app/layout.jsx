@@ -1,7 +1,7 @@
 import NavbarComponent from "@/components/NavbarComponent";
 import SidebarComponent from "@/components/SidebarComponent";
 import "./globals.css";
-import ListBoardComponentHeader from "@/components/ListBoardComponentHeader";
+import Image from "next/image";
 
 export const metadata = {
   title: "Create Next App",
@@ -22,10 +22,11 @@ export default function RootLayout({ children }) {
             </div>
             <div className="w-full">{/* <ListBoardComponentHeader /> */}</div>
 
-            <img
+            <Image
+              width={1000}
+              height={1000}
               src="../assets/icons/welcome.jpg"
               alt="welcome image"
-              className=""
             />
           </div>
         </div>

@@ -2,6 +2,7 @@ import { registerService } from "@/service/auth.service";
 import { redirect } from "next/navigation";
 // import { redirect } from "next/dist/server/api-utils";
 import React from "react";
+import Image from "next/image";
 
 const RegisterPage = () => {
   async function handledRegister(userInfo) {
@@ -24,7 +25,7 @@ const RegisterPage = () => {
   return (
     <div>
       <div className="mt-72 ml-40">
-        <img src="../assets/icons/logo.svg" alt="logo image" />
+        <Image src="../assets/icons/logo.svg" alt="logo image" width={150} height={60} />
       </div>
       <div className="ml-40 mt-10 flex">
         <form action={handledRegister} className="flex gap-5 relative">
@@ -121,7 +122,7 @@ const RegisterPage = () => {
           </div>
         </form>
         <div className="ml-32">
-          <img src="../assets/icons/sign-up.svg" alt="sign-up image" />
+          <Image src="../assets/icons/sign-up.svg" alt="sign-up image" />
         </div>
       </div>
     </div>
